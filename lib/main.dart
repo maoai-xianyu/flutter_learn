@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'model/post.dart';
+import 'package:flutter_learn/demo/listview_demo.dart';
 
 void main() => runApp(App());
 
@@ -8,6 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -20,40 +21,57 @@ class App extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.yellow,
+        splashColor: Colors.white70, //水波纹的效果
       ),
       home: HomePage(),
     );
   }
 }
 
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      appBar: AppBar(
-        title: Text('coding type'),
-        elevation: 0.0,
-      ),
-      body: ListView.builder(
-          itemCount: posts.length,
-          itemBuilder: _listItemBuilder),
-    );
-  }
-
-  Widget _listItemBuilder(BuildContext context, int index) {
-    return Container(
-      color: Colors.white,
-      margin: EdgeInsets.all(8.0),
-      child: Column(
-          children:<Widget>[
-            Image.network(posts[index].imageUrl),
-            SizedBox(height: 16.0),
-            Text(posts[index].title,style: Theme.of(context).textTheme.title),
-            Text(posts[index].author,style: Theme.of(context).textTheme.subhead),
-            SizedBox(height: 16.0),
-          ]
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        appBar: AppBar(
+          title: Text('coding type'),
+          elevation: 0.0,
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: 'Navigation',
+            onPressed: () => debugPrint('Navigation is onPress..'),
+          ),
+          // 标题右边的空间
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: () => debugPrint('Search is onPress..'),
+            ),
+          ],
+          // 标题底添加tabBar
+          bottom: TabBar(
+              // 指示器
+              unselectedLabelColor: Colors.black38,
+              indicatorColor: Colors.black54,
+              indicatorSize: TabBarIndicatorSize.label,
+              indicatorWeight: 1.0,
+              // tab栏
+              tabs: <Widget>[
+                Tab(icon: Icon(Icons.local_florist)),
+                Tab(icon: Icon(Icons.change_history)),
+                Tab(icon: Icon(Icons.directions_bike)),
+              ]),
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            Icon(Icons.local_florist, size: 128.0, color: Colors.black12),
+            Icon(Icons.change_history, size: 128.0, color: Colors.black12),
+            Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+          ],
+        ),
       ),
     );
   }

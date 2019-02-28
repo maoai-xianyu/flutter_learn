@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/demo/listview_demo.dart';
+import 'package:flutter_learn/demo/drawer_demo.dart';
 
 void main() => runApp(App());
 
@@ -38,11 +39,11 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text('coding type'),
           elevation: 0.0,
-          leading: IconButton(
+         /* leading: IconButton(
             icon: Icon(Icons.menu),
             tooltip: 'Navigation',
             onPressed: () => debugPrint('Navigation is onPress..'),
-          ),
+          ),*/
           // 标题右边的空间
           actions: <Widget>[
             IconButton(
@@ -72,6 +73,8 @@ class HomePage extends StatelessWidget {
             Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
           ],
         ),
+        // 添加drawer部件
+        drawer: DrawerDemo(),
       ),
     );
   }

@@ -24,7 +24,9 @@ class ContainerDemo extends StatelessWidget {
           //repeat: ImageRepeat.repeatY
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-              Colors.indigoAccent[400].withOpacity(0.5), BlendMode.hardLight),
+            Colors.indigoAccent[400].withOpacity(0.5),
+            BlendMode.hardLight,
+          ),
         ),
       ),
       child: Row(
@@ -146,6 +148,7 @@ class TextSettingDemo extends StatelessWidget {
 
   final String _author = '李白';
   final String _title = '将进酒';
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

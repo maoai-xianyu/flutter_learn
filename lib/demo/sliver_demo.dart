@@ -32,7 +32,7 @@ class SliverDemo extends StatelessWidget {
           SliverSafeArea(
             sliver: SliverPadding(
               padding: EdgeInsets.all(8.0),
-              sliver: SliveListDemo(),
+              sliver: SliveGridDemo(),
             ),
           ),
         ],
@@ -114,6 +114,9 @@ class SliveGridDemo extends StatelessWidget {
       delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
           return Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12.0),
+            ),
             child: Image.network(
               posts[index].imageUrl,
               fit: BoxFit.cover,

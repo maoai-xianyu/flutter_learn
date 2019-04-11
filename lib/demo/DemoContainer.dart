@@ -25,7 +25,7 @@ class DemoContainer extends StatelessWidget {
           gradient: LinearGradient(
             colors: [Colors.lightBlue,Colors.greenAccent,Colors.purple],
           ),
-          border: Border.all(width: 5.0,color: Colors.red),
+          border: Border.all(width: 2.0,color: Colors.red),
         ),
       ),
     );

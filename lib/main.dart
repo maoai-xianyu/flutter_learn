@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'demo/DemoText.dart';
 import 'demo/DemoContainer.dart';
 import 'demo/DemoListView.dart';
+import 'demo/DemoGridView.dart';
 
 void main() => runApp(App());
 
@@ -23,7 +24,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Weclome to Flutter'),
       ),
-      body: DemoListView(),
+      body: DemoGridView(),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'demo/DemoText.dart';
 import 'demo/DemoContainer.dart';
 import 'demo/DemoListView.dart';
 import 'demo/DemoGridView.dart';
+import 'demo/DemoRowWidget.dart';
 
 void main() => runApp(App());
 
@@ -11,7 +12,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Weclome to Flutter',
+      title: 'Row widegt demo',
       home: Home(),
     );
   }
@@ -22,9 +23,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Weclome to Flutter'),
+        title: Text('Row widegt demo'),
       ),
-      body: DemoGridView(),
+      body: DemoRowWidget(),
     );
   }
 }

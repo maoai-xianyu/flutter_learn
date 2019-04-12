@@ -6,6 +6,7 @@ import 'demo/DemoGridView.dart';
 import 'demo/DemoColumnWidget.dart';
 import 'demo/DemoStack.dart';
 import 'demo/DemoCard.dart';
+import 'demo/DemoNavigator.dart';
 
 void main() => runApp(App());
 
@@ -25,9 +26,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stack widegt demo'),
+        title: Text('路由'),
       ),
-      body: DemoCard(),
+      body: DemoNavigator(),
     );
   }
 }

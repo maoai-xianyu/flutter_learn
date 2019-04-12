@@ -4,6 +4,7 @@ import 'demo/DemoContainer.dart';
 import 'demo/DemoListView.dart';
 import 'demo/DemoGridView.dart';
 import 'demo/DemoColumnWidget.dart';
+import 'demo/DemoStack.dart';
 
 void main() => runApp(App());
 
@@ -23,9 +24,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Row widegt demo'),
+        title: Text('Stack widegt demo'),
       ),
-      body: DemoColumnWidget(),
+      body: DemoStack(),
     );
   }
 }

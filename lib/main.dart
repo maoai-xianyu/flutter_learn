@@ -7,7 +7,7 @@ import 'demo/DemoColumnWidget.dart';
 import 'demo/DemoStack.dart';
 import 'demo/DemoCard.dart';
 import 'demo/DemoCard.dart';
-import 'demo/DemoNavigatorParam.dart';
+import 'demo/DemoNavigatorReturnData.dart';
 
 void main() => runApp(App());
 
@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('路由'),
       ),
-      body: DemoNavigatorParam(),
+      body: DemoNavigatorReturnData(),
     );
   }
 }

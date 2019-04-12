@@ -21,7 +21,7 @@ class FirstPage extends StatelessWidget {
 }
 
 class RouteButton extends StatelessWidget {
-  // 定义方法，异步请求
+  // 定义方法，异步请求 async是启用异步方法
   _navigatorPage(BuildContext context) async {
     final result = await Navigator.push(
         context, MaterialPageRoute(builder: (context) => SecondPage()));

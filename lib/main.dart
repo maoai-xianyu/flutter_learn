@@ -3,7 +3,7 @@ import 'demo/DemoText.dart';
 import 'demo/DemoContainer.dart';
 import 'demo/DemoListView.dart';
 import 'demo/DemoGridView.dart';
-import 'demo/DemoRowWidget.dart';
+import 'demo/DemoColumnWidget.dart';
 
 void main() => runApp(App());
 
@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Row widegt demo'),
       ),
-      body: DemoRowWidget(),
+      body: DemoColumnWidget(),
     );
   }
 }

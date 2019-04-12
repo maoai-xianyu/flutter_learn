@@ -10,7 +10,7 @@ class DemoNavigator extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => new SecondPageScreen(),
+                  builder: (context) => SecondPageScreen(),
                 ));
           }),
     );

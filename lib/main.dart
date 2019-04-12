@@ -5,6 +5,7 @@ import 'demo/DemoListView.dart';
 import 'demo/DemoGridView.dart';
 import 'demo/DemoColumnWidget.dart';
 import 'demo/DemoStack.dart';
+import 'demo/DemoCard.dart';
 
 void main() => runApp(App());
 
@@ -26,7 +27,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Stack widegt demo'),
       ),
-      body: DemoStack(),
+      body: DemoCard(),
     );
   }
 }

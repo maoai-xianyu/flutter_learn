@@ -71,6 +71,5 @@ class DemoStackPosition extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

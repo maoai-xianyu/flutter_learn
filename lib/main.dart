@@ -9,6 +9,7 @@ import 'demo/DemoCard.dart';
 import 'demo/DemoCard.dart';
 import 'demo/DemoNavigatorReturnData.dart';
 import 'demo/DemoImageAssets.dart';
+import 'project/Project01BottomNavigationBar.dart';
 
 void main() => runApp(App());
 
@@ -17,8 +18,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Row widegt demo',
-      home: Home(),
+      title: 'Flutter bottomNavigationBar',
+      theme: ThemeData.light() ,
+      home: BottomNavigationWidget(),
     );
   }
 }

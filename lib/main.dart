@@ -12,6 +12,7 @@ import 'demo/DemoImageAssets.dart';
 import 'project/Project02BottomNavigationBarDefine.dart';
 import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
+import 'project/Project05StagePage.dart';
 
 void main() => runApp(App());
 
@@ -28,7 +29,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: Project04DullPolish(),
+      home: Project05StagePage(),
     );
   }
 }

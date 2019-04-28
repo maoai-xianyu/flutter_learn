@@ -39,3 +39,6 @@ samples, guidance on mobile development, and a full API reference.
 1. 实战：第01节：底部导航栏制作 Project01BottomNavigationBar.dart
 2. 实战：第02节：不规则底部工具栏制作 Project02BottomNavigationBarDefine.dart
 3. 实战：第03节：酷炫的路由动画 Project03NavigatorAnimation.dart
+4. 实战：第04节：毛玻璃效果 Project04DullPolish.dart 
+5. 实战：第05节：页面状态 Project05StagePage.dart  Project05StagePageAlive.dart
+6. 实战：第06节：搜索条 Project06SearchProgress.dart  Project06Asset.dart

@@ -42,3 +42,4 @@ samples, guidance on mobile development, and a full API reference.
 4. 实战：第04节：毛玻璃效果 Project04DullPolish.dart 
 5. 实战：第05节：页面状态 Project05StagePage.dart  Project05StagePageAlive.dart
 6. 实战：第06节：搜索条 Project06SearchProgress.dart  Project06Asset.dart
+7. 实战：第07节：页面流式布局 Project07WrapFlowLayout.dart  

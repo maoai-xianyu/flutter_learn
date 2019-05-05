@@ -14,7 +14,8 @@ import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
 import 'project/Project05StagePage.dart';
 import 'project/Project06SearchProgress.dart';
-import './project/Project07WrapFlowLayout.dart';
+import 'project/Project07WrapFlowLayout.dart';
+import 'project/Project08ExpansionTile.dart';
 
 
 void main() => runApp(App());
@@ -32,7 +33,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: Project07WrapFlowLayout(),
+      home: Project08ExpansionTile(),
     );
   }
 }

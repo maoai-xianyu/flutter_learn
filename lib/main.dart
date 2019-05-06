@@ -17,6 +17,7 @@ import 'project/Project06SearchProgress.dart';
 import 'project/Project07WrapFlowLayout.dart';
 import 'project/Project08ExpansionTile.dart';
 import 'project/Project09ExpansionPanelList.dart';
+import 'project/Project10CustomClipper.dart';
 
 
 void main() => runApp(App());
@@ -34,7 +35,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: Project09ExpansionPanelList(),
+      home: Project10CustomClipper(),
     );
   }
 }

@@ -18,6 +18,7 @@ import 'project/Project07WrapFlowLayout.dart';
 import 'project/Project08ExpansionTile.dart';
 import 'project/Project09ExpansionPanelList.dart';
 import 'project/Project10CustomClipper.dart';
+import 'project/Project11ScreenAnimation.dart';
 
 
 void main() => runApp(App());
@@ -35,7 +36,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: Project10CustomClipper(),
+      home: Project11ScreenAnimation(),
     );
   }
 }

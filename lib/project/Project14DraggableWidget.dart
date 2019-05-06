@@ -38,7 +38,7 @@ class _Project14DraggableWidget extends State<Project14DraggableWidget> {
           color: widget.widgetColor.withOpacity(0.5),
         ),
         // 拖拽松手
-        onDraggableCanceled: (velocity, offset) {
+        onDraggableCanceled: (Velocity velocity, Offset offset) {
           setState(() {
             this.offset = offset;
           });

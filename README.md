@@ -47,3 +47,4 @@ samples, guidance on mobile development, and a full API reference.
 9. 实战：第09节：展开闭合控件 ExpansionPanelList Project09ExpansionPanelList.dart
 10. 实战：第10节：路径裁切和贝塞尔曲线  Project10CustomClipper.dart
 11. 实战：第11节：闪屏页动画  Project11ScreenAnimation.dart
+12. 实战：第12节：右滑返回上一页  Project12RightSlideBack.dart

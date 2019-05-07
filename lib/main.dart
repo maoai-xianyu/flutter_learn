@@ -9,6 +9,7 @@ import 'demo/DemoCard.dart';
 import 'demo/DemoCard.dart';
 import 'demo/DemoNavigatorReturnData.dart';
 import 'demo/DemoImageAssets.dart';
+import 'demo/DemoDio.dart';
 import 'project/Project02BottomNavigationBarDefine.dart';
 import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
@@ -39,7 +40,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: Project14Draggable(),
+      home: Home(),
     );
   }
 }
@@ -51,7 +52,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('路由'),
       ),
-      body: DemoImageAssets(),
+      body: DemoDio(),
     );
   }
 }

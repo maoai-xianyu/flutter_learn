@@ -11,6 +11,7 @@ import 'demo/DemoNavigatorReturnData.dart';
 import 'demo/DemoImageAssets.dart';
 import 'demo/DemoDio.dart';
 import 'demo/DemoDioStulff.dart';
+import 'demo/DemoDioFakeHeaders.dart';
 import 'project/Project02BottomNavigationBarDefine.dart';
 import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
@@ -53,7 +54,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('网络请求'),
       ),
-      body: DemoDioStulff(),
+      body: DemoDioFakeHeaders(),
     );
   }
 }

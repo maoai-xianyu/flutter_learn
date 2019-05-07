@@ -10,6 +10,7 @@ import 'demo/DemoCard.dart';
 import 'demo/DemoNavigatorReturnData.dart';
 import 'demo/DemoImageAssets.dart';
 import 'demo/DemoDio.dart';
+import 'demo/DemoDioStulff.dart';
 import 'project/Project02BottomNavigationBarDefine.dart';
 import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
@@ -50,9 +51,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('路由'),
+        title: Text('网络请求'),
       ),
-      body: DemoDio(),
+      body: DemoDioStulff(),
     );
   }
 }

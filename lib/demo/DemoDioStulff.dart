@@ -56,7 +56,7 @@ class _DemoDioStulffState extends State<DemoDioStulff> {
         builder: (context) => AlertDialog(title: Text('美女类型不能为空')),
       );
     } else {
-      getHttp(typeController.text.toString()).then((value) {
+      postHttp(typeController.text.toString()).then((value) {
         setState(() {
           showText = value['data']['name'].toString();
         });
@@ -73,6 +73,20 @@ class _DemoDioStulffState extends State<DemoDioStulff> {
       var data = {'name': typeText};
       response = await Dio().get(
           'https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/dabaojian',
+          queryParameters: data);
+      return response.data;
+    } catch (e) {
+      return print(e);
+    }
+  }
+
+
+  Future postHttp(String typeText) async {
+    try {
+      Response response;
+      var data = {'name': typeText};
+      response = await Dio().post(
+          'https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/post_dabaojian',
           queryParameters: data);
       return response.data;
     } catch (e) {

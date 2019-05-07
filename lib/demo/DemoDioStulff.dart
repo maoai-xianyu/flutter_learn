@@ -19,29 +19,31 @@ class _DemoDioStulffState extends State<DemoDioStulff> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          TextField(
-            controller: typeController,
-            decoration: InputDecoration(
-                contentPadding: EdgeInsets.all(10.0),
-                labelText: '美女类型',
-                helperText: '请输入你喜欢的类型'),
-            autofocus: false,
-          ),
-          RaisedButton(
-            onPressed: () {
-              _choiceAction();
-            },
-            child: Text('选择完毕'),
-          ),
-          Text(
-            showText,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-          ),
-        ],
+    return SingleChildScrollView(
+      child: Container(
+        child: Column(
+          children: <Widget>[
+            TextField(
+              controller: typeController,
+              decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(10.0),
+                  labelText: '美女类型',
+                  helperText: '请输入你喜欢的类型'),
+              autofocus: false,
+            ),
+            RaisedButton(
+              onPressed: () {
+                _choiceAction();
+              },
+              child: Text('选择完毕'),
+            ),
+            Text(
+              showText,
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+            ),
+          ],
+        ),
       ),
     );
   }

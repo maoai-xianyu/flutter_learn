@@ -12,6 +12,7 @@ import 'demo/DemoImageAssets.dart';
 import 'demo/DemoDio.dart';
 import 'demo/DemoDioStulff.dart';
 import 'demo/DemoDioFakeHeaders.dart';
+import 'demo/DemoProdive.dart';
 import 'project/Project02BottomNavigationBarDefine.dart';
 import 'project/Project03NavigatorAnimation.dart';
 import 'project/Project04DullPolish.dart';
@@ -25,13 +26,19 @@ import 'project/Project11ScreenAnimation.dart';
 import 'project/Project12RightSlideBack.dart';
 import 'project/Project13ToolTips.dart';
 import 'project/Project14Draggable.dart';
+import 'package:provide/provide.dart';
+import 'provide/Counter.dart';
 
-
-void main() => runApp(App());
-
-/*void main() {
-  return runApp(App());
-}*/
+void main() {
+  final providers = Providers()
+    ..provide(Provider.function((context) => Counter(0)));
+  return runApp(
+    ProviderNode(
+      child: App(),
+      providers: providers,
+    ),
+  );
+}
 
 class App extends StatelessWidget {
   @override
@@ -52,9 +59,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('网络请求'),
+        title: Text('provide'),
       ),
-      body: DemoDioFakeHeaders(),
+      body: DemoProvide(),
     );
   }
 }
